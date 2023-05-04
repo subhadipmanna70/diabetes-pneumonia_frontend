@@ -1,0 +1,135 @@
+body,
+html {
+  height: 100%;
+}
+
+.bg {
+  background-image: url("images.webp");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 2px black;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Edu NSW ACT Foundation", cursive;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+h1 {
+  margin-top: 0;
+  letter-spacing: 2px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+}
+.form-container {
+  background: linear-gradient(
+      to right,
+      rgba(255, 215, 255, 0) 0%,
+      rgba(228, 10, 10, 0.5) 20%,
+      rgba(255, 255, 255, 0) 61%
+    ),
+    linear-gradient(rgb(238, 59, 53) 42%, rgb(161, 5, 5) 60%);
+}
+
+.input-container {
+  color: #fff;
+  text-shadow: 2px 2px 2px black;
+  font-weight: bold;
+  letter-spacing: 2px;
+  display: flex;
+  text-transform: uppercase;
+  flex-direction: column;
+  margin-bottom: 13px;
+  width: 100%;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="float"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  background-color: #060606;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+}
+
+.btn-go-back {
+  position: fixed;
+  bottom: 20px;
+  text-transform: uppercase;
+  right: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #060606;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+.btn-go-back:hover {
+  color: #ffffff;
+  background-color: #191919;
+}

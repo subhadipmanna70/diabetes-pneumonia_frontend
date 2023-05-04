@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!-- basic -->
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- mobile metas -->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+   <!-- site metas -->
+   <title>Predict</title>
+   <meta name="keywords" content="">
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <!-- bootstrap css -->
+   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <!-- style css -->
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+   <!-- Responsive-->
+   <link rel="stylesheet" href="css/responsive.css">
+   <!-- fevicon -->
+   <link rel="icon" href="images/fevicon.png" type="image/gif" />
+   <!-- Scrollbar Custom CSS -->
+   <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+   <!-- Tweaks for older IEs-->
+   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+   <!-- owl stylesheets -->
+   <link rel="stylesheet" href="css/owl.carousel.min.css">
+   <link rel="stylesheet" href="css/owl.theme.default.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+      media="screen">
+</head>
+<style>
+   .table_one {
+      background-color: #4b52ba;
+      margin: 0 auto;
+      text-align: center;
+   }
+
+   .table_two {
+      color: white;
+      font-size: 30px;
+   }
+
+   .one {
+      background-color: #24275a;
+   }
+
+   section {
+      background: linear-gradient(to right, rgba(255, 215, 255, 0) 0%, rgba(225, 255, 255, 0.5) 20%, rgba(255, 255, 255, 0) 61%), linear-gradient(rgb(75, 140, 165) 52%, rgb(18, 54, 68) 60%);
+   }
+   .acc {
+      background-color: #4b52ba;
+      color: white;
+      font-size: 20px;
+   }
+
+   .pneu {
+      border-radius: 20px;
+   }
+
+   .table_th {
+      background-color: #1a1431;
+   }
+
+   .container {
+      width: 80%;
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+   }
+
+   h1 {
+      font-size: 2.5rem;
+      margin-top: 50px;
+      margin-bottom: 30px;
+   }
+
+   .button-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+   }
+
+   .button {
+      display: inline-block;
+      padding: 15px 30px;
+      margin: 10px;
+      background-color: #008CBA;
+      color: white;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      text-decoration: none;
+      cursor: pointer;
+   }
+
+   .button:hover {
+      background-color: #00587a;
+   }
+
+   .table_two:hover {
+      color: rgb(155, 227, 233);
+      text-shadow: 4px 0px #101C22;
+   }
+</style>
+
+<body>
+   <!--header section start -->
+   <div class="header_section">
+      <div class="container-fluid">
+         <div class="main">
+            <div class="logo"><a href="index.html"><img src="images/logo1.jpg" style="  border-radius: 50%; border:2px solid white"></a></div>
+            <div class="menu_text">
+               <ul>
+                  <div class="togle_">
+                  </div>
+                  <div id="myNav" class="overlay">
+                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                     <div class="overlay-content">
+                        <a href="index.html">Home</a>
+                        <a href="protect.html">Protect</a>
+                        <a href="about.html">About</a>
+                        <a href="predict.html">Predict</a>
+                        <a href="news.html">News</a>
+                     </div>
+                  </div>
+                  <span class="navbar-toggler-icon"></span>
+                  <span onclick="openNav()"><img src="images/menubar.jpg" class="toggle_menu"></span>
+                  <span onclick="openNav()"><img src="images/toogle-icon1.png" class="toggle_menu_1"></span>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <!-- banner section start -->
+      <div class="container">
+         <div class="about_taital_main">
+            <h2 class="about_tag">Detection Section</h2>
+            <div class="about_menu">
+               <ul>
+                  <li class="hom"><a href="index.html">Home</a></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <!-- banner section end -->
+   </div>
+   <!-- header section end -->
+   <!-- doctor section start -->
+   
+   <div class="table_one">
+      <a href="./diabates/index.html" class="table_two px-5 border rounded table_th">Diabetes</a>
+      <a href="./pneumonia/index.html" class="table_two px-5 border rounded table_th">Pneumonia</a>
+   </div>
+   <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-6 col-12">
+
+            <div class="mb-5"></div>
+            <!-- Accordion -->
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+               <div class="accordion-item border rounded border-5">
+                 <h2 class="accordion-header" id="flush-headingOne">
+                   <button class="accordion-button collapsed acc" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                     What is the main cause of pneumonia?
+                   </button>
+                 </h2>
+                 <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                   <div class="accordion-body acc">Many germs can cause pneumonia. The most common are bacteria and viruses in the air we breathe. Your body usually prevents these germs from infecting your lungs. But sometimes these germs can overpower your immune system, even if your health is generally good.Pneumonia is classified according to the types of germs that cause it and where you got the infection.</div>
+                 </div>
+               </div>
+               <div class="accordion-item border rounded border-5">
+                 <h2 class="accordion-header" id="flush-headingTwo">
+                   <button class="accordion-button collapsed acc" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                     What Are the Symptoms of Pneumonia?
+                   </button>
+                 </h2>
+                 <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                   <div class="accordion-body acc">Cough, which may produce greenish, yellow or even bloody mucus.
+                     Fever, sweating and shaking chills.
+                     Shortness of breath.
+                     Rapid, shallow breathing.
+                     Sharp or stabbing chest pain that gets worse when you breathe deeply or cough.
+                     Loss of appetite, low energy, and fatigue.</div>
+                 </div>
+               </div>
+               <div class="accordion-item border rounded border-5">
+                 <h2 class="accordion-header" id="flush-headingThree">
+                   <button class="accordion-button collapsed acc" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                     What is the best treatment for pneumonia?
+                   </button>
+                 </h2>
+                 <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                   <div class="accordion-body acc">Antibiotics may be prescribed for bacterial pneumonia. Most people begin to feel better after one to three days of antibiotic treatment. However, you should take antibiotics as your doctor prescribes. If you stop too soon, your pneumonia may come back.
+                     Antiviral medicine is sometimes prescribed for viral pneumonia.</div>
+                 </div>
+               </div>
+             </div>
+          </div>
+         
+          <div class="col-sm-12 col-md-6 col-lg-6 col-12 m-auto text-end mt-4">
+            <img src="./images/pneu.jpg" width="100%" class="pneu">
+          </div>
+          <div class="mb-5"></div>
+        </div>
+      </div>
+
+      <div class="container">
+         <div class="row">
+
+   
+           <div style="padding-top: 50px;" class="col-sm-12 col-md-6 col-lg-6 col-12 m-auto text-end mt-5">
+             <img src="./images/dia.webp" width="100%" class="pneu">
+           </div>
+           <div class="col-sm-12 col-md-6 col-lg-6 col-12">
+ 
+            <div class="mb-5"></div>
+            <!-- Accordion -->
+            <div class="accordion accordion-flush" id="accordionFlushExample2">
+               <div class="accordion-item border rounded border-5">
+                 <h2 class="accordion-header" id="flush-headingOne">
+                   <button class="accordion-button collapsed acc" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse1" aria-expanded="false" aria-controls="flush-collapse1">
+                     What is the main cause of diabetes?
+                   </button>
+                 </h2>
+                 <div id="flush-collapse1" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample2">
+                   <div class="accordion-body acc">The exact cause of most types of diabetes is unknown. In all cases, sugar builds up in the bloodstream. This is because the pancreas doesn't produce enough insulin. Both type 1 and type 2 diabetes may be caused by a combination of genetic or environmental factors.</div>
+                 </div>
+               </div>
+               <div class="accordion-item border rounded border-5">
+                 <h2 class="accordion-header" id="flush-headingTwo">
+                   <button class="accordion-button collapsed acc" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse2" aria-expanded="false" aria-controls="flush-collapse2">
+                     What Are the Symptoms of diabetes?
+                   </button>
+                 </h2>
+                 <div id="flush-collapse2" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample2">
+                   <div class="accordion-body acc">Urinate (pee) a lot, often at night
+                    Are very thirsty
+                    Lose weight without trying
+                    Are very hungry
+                    Have blurry vision
+                    Have numb or tingling hands or feet
+                    Feel very tired
+                    Have very dry skin
+                    Have sores that heal slowly
+                    Have more infections than usual</div>
+                 </div>
+               </div>
+               <div class="accordion-item border rounded border-5">
+                 <h2 class="accordion-header" id="flush-headingThree">
+                   <button class="accordion-button collapsed acc" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse3" aria-expanded="false" aria-controls="flush-collapse3">
+                     What is the best treatment for diabetes?
+                   </button>
+                 </h2>
+                 <div id="flush-collapse3" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample2">
+                   <div class="accordion-body acc">Taking insulin or other diabetes medicines is often part of treating diabetes. In addition to making healthy food and beverage choices, getting physical activity, getting enough sleep, and managing stress, medicines can help you manage the disease.</div>
+                 </div>
+               </div>
+             </div>
+          </div>
+           <div class="mb-5"></div>
+         </div>
+       </div>
+    </section>
+
+   <!-- doctor section end -->
+   <!-- footer section start -->
+   <div class="footer_section layout_padding">
+      <div class="container">
+         <div class="footer_section_2">
+            <div class="row">
+           <!-- <div class="col-lg-3 col-sm-6">
+                  <h2 class="useful_text">Resources</h2>
+                  <div class="footer_menu">
+                     <ul>
+                        <li><a href="#">What we do</a></li>
+                        <li><a href="#">Media</a></li>
+                        <li><a href="#">Travel Advice</a></li>
+                        <li><a href="#">Protection</a></li>
+                        <li><a href="#">Care</a></li>
+                         </ul>
+                  </div>
+               </div> -->
+               <div class="col-lg-4 col-sm-6">
+                  <h2 class="useful_text">About</h2>
+                  <p class="footer_text">Health care, or healthcare, is the improvement of health via the prevention,
+                     diagnosis, treatment, amelioration or cure of disease, illness, injury, and other physical and
+                     mental impairments in people. Health care is delivered by health professionals and allied health
+                     fields. It includes work done in providing primary care, secondary care, and
+                     tertiary care, as well as in public health.</p>
+               </div>
+               <div class="col-lg-4 col-sm-6">
+                  <h2 class="useful_text">Contact Us</h2>
+                  <div class="location_text">
+                     <ul>
+                        <li>
+                           <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>
+                              <span class="padding_15">Kolkata</span></a>
+                        </li>
+                        <li>
+                           <a href="#"><i class="fa fa-phone" aria-hidden="true"></i>
+                              <span class="padding_15">Call +91 1234567890</span></a>
+                        </li>
+                        <li>
+                           <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i>
+                              <span class="padding_15">subhadipmanna70@gmail.com</span></a>
+                          <br/> <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i>
+                              <span class="padding_15">supravatsahoo91@gmail.com</span></a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-sm-6">
+                  <h2 class="useful_text">countrys</h2>
+                  <div class="map_image"><img src="images/map-bg.png"></div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- footer section end -->
+   <!-- copyright section start -->
+   <div class="copyright_section">
+      <div class="container">
+         <div class="row">
+            <div class="col-sm-12">
+               <p class="copyright_text">© 2023 All Rights Reserved.</p>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- copyright section end -->
+   <!-- Javascript files-->
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+   <script src="js/jquery.min.js"></script>
+   <script src="js/popper.min.js"></script>
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <script src="js/jquery-3.0.0.min.js"></script>
+   <script src="js/plugin.js"></script>
+   <!-- sidebar -->
+   <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+   <script src="js/custom.js"></script>
+   <!-- javascript -->
+   <script src="js/owl.carousel.js"></script>
+   <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+   <script>
+      $(document).ready(function () {
+         $(".fancybox").fancybox({
+            openEffect: "none",
+            closeEffect: "none"
+         });
+
+         $(".zoom").hover(function () {
+
+            $(this).addClass('transition');
+         }, function () {
+
+            $(this).removeClass('transition');
+         });
+      });
+   </script>
+   <script>
+      function openNav() {
+         document.getElementById("myNav").style.width = "100%";
+      }
+      function closeNav() {
+         document.getElementById("myNav").style.width = "0%";
+      }
+   </script>
+</body>
+
+</html>

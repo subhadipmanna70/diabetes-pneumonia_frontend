@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Pneumonia Detection</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Edu+NSW+ACT+Foundation:wght@600&family=Josefin+Sans&display=swap"
+    rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+
+</head>
+
+<body class="bg">
+  <div class="container">
+    <h1>Pneumonia Detection</h1>
+    <form id="form">
+      <div class="input-container">
+        <label for="file">Upload Chest X-ray Image:</label>
+        <input type="file" name="file">
+      </div>
+      <div class="btn-container">
+        <button type="submit">Detect Pneumonia</button>
+      </div>
+    </form>
+    <div>
+      <p id="result" style="color:ivory"></p>
+    </div>
+    <!-- <div class="preview-container">
+      <h2>Preview</h2>
+      <div id="preview"></div>
+      <button id="toggle-preview-btn" type="button" onclick="togglePreview()">Toggle Preview</button>
+    </div> -->
+  </div>
+  <a href="../predict.html" class="btn-go-back">Go Back</a>
+  <!-- <script src="app.js"></script> -->
+  <script src="pneumonia.js"></script>
+</body>
+
+</html>
